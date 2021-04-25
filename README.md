@@ -2,7 +2,7 @@
 
 Dockerized environment to experiment and play with neo4j.
 
-## Pre-requisites ⛓️
+## Dependencies ⛓️
 - docker
 - python
 - [py2neo](https://py2neo.org/2021.0/)
