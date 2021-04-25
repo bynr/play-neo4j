@@ -1,5 +1,26 @@
 # play-neo4j
 
+## Pre-requisities
+- docker
+- python
+- [py2neo](https://py2neo.org/2021.0/)
+- [optional] Bloom licence
+
+## Setup
+
+- `make run` will setup a docker container with neo4j
+- interract from python with a neo4j DB
+```python
+from py2neo import Graph, Node, Relationship
+g = Graph("http://neo4j:123@localhost:7474")
+a = Node("Person", name="Alice", age=33)
+b = Node("Person", name="Bob", age=44)
+KNOWS = Relationship.type("KNOWS")
+g.merge(KNOWS(a, b), "Person", "name")
+
+query = "MATCH (n) RETURN ID(n) as ID, n.Key as Key"
+graph.run(query).data()
+```
 
 # References
 
