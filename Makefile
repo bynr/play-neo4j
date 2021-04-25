@@ -4,7 +4,7 @@ run:
 stop:
 	docker stop neo4j
 
-reset_db:
+reset:
 	rm -rf data/
 	mkdir data/
 
