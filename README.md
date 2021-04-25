@@ -1,5 +1,7 @@
 # play-neo4j
 
+Dockerized environment to experiment and play with neo4j.
+
 ## Pre-requisites ⛓️
 - docker
 - python
