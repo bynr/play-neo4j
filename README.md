@@ -1,12 +1,12 @@
 # play-neo4j
 
-## Pre-requisities
+## Pre-requisites ⛓️
 - docker
 - python
 - [py2neo](https://py2neo.org/2021.0/)
 - [optional] Bloom licence
 
-## Setup
+## Run 🏃 
 
 - `make run` will setup a docker container with neo4j
 - interract from python
@@ -22,6 +22,6 @@ query = "MATCH (n) RETURN ID(n) as ID, n.Key as Key"
 graph.run(query).data()
 ```
 - `make stop` to clean up
-# References
+# References 📚
 
 Setup script to run neo4j in docker comes from: [link](https://gist.github.com/sarmbruster/883e405cf8db04c9a3179d5dc9f300b3)
