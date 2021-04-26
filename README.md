@@ -21,7 +21,7 @@ KNOWS = Relationship.type("KNOWS")
 g.merge(KNOWS(a, b), "Person", "name")
 
 query = "MATCH (n) RETURN ID(n) as ID, n.Key as Key"
-graph.run(query).data()
+g.run(query).data()
 ```
 - `make stop` to clean up
 # References 📚
